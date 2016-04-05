@@ -9,7 +9,7 @@ Ryan Petersen
 Github email address (in the git log): petersenrr@Ryans-MacBook-Pro.local
 
 Jason Mavandi
-Github email address (in the git log): A_10607708@cs3060.ad.uvu.edu, mvndaai+github@gmail.com, Jason.Mavandi@emc.com
+Github email address (in the git log): Jason.Mavandi@emc.com
 
 
 
@@ -30,9 +30,16 @@ Jason Mavandi: A
 
 Jason really put the effort into to project and created the go file that will create the jar and merge the java and the go programs into one seamless flow for the user. Jason was very on top of the project, and got it done very quickly. He has helped me understand the workings of Git and how to use it. Thus Jason should get an A.
 
-For me (Ryan) I felt that I did 2 of the 4 features and was able to get them right, I created the repository and shared it with jason and with Jason doing peer review of my code I was able to go back multiple times and fix the code. I created the observation txt as well. For my contributions I think that I should get an A as well.
+For me (Ryan) I felt that I did 2 of the 4 features and was able to get them right, I created the repository and shared it with Jason and with Jason doing peer review of my code I was able to go back multiple times and fix the code. I created the observation txt as well. For my contributions I think that I should get an A as well.
 
 Overall I think that we both put in the effort and tried to spread the workload evenly, and we were successful in doing so with the results being correct for the project.
 
 
+Jason's Explanation:
+Ryan: A
+Ryan took the time in this assignment to create a Github project and share it, something he has never done before. Then he did the his part correctly.
 
+Jason: A
+I was able to reuse a lot of the setup from the last project to make this one an easy setup. I did my part and we worked together.
+
+This project was easier than the last and flowed better since we already had experience working together.

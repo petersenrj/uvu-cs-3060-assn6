@@ -34,6 +34,8 @@ func main() {
 			log.Printf("Recover - %s: %s", r, string(debug.Stack()))
 		}
 	}()
+	fmt.Println("Assignment 6: Block Access Algorithm")
+	fmt.Println("By: Jason Mavandi & Ryan Petersen\n")
 	fcfs()
 	runJava("ssft.jar")
 	look()

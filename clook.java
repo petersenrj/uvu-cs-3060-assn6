@@ -8,8 +8,6 @@
  */
 
 
-package clook;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -23,36 +21,36 @@ import java.util.Collections;
  * @author petersenrr
  */
 public class clook {
-    
+
     private static ArrayList<Integer> array;
     private static int total = 0;
-    
-    
+
+
     public static void main(String[] args) throws FileNotFoundException, IOException
     {
-        
+
         File file = null;
         if (0 < args.length)
         {
             file = new File(args[0]);
         }
-        
+
         FileReader fileReader = new FileReader(file);
         BufferedReader bufferReader = new BufferedReader(fileReader);
         clook.array = new ArrayList<>();
         String line;
-        
+
         while((line = bufferReader.readLine()) !=null)
         {
-            
+
             int temp = Integer.parseInt(line);
             clook.array.add(temp);
         }
         calculate();
-        
+
         System.out.println("SSTF Total Seek: " + clook.total);
     }
-    
+
     private static void calculate()
     {
         int temp = clook.array.get(0);
@@ -60,7 +58,7 @@ public class clook {
         int i = 0;
         int next = 0;
         int current = 0;
-        
+
         while(clook.array.get(i) != null)
         {
             if(temp == clook.array.get(i))
@@ -71,7 +69,7 @@ public class clook {
             }
             i++;
         }
-        
+
         for(int j = 0; j < clook.array.size()-1; j++)
         {
             if(clook.array.get(next) > clook.array.get(current))
