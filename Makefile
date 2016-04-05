@@ -18,4 +18,4 @@ test:
 	make assn6; echo
 	./assn6 block-list.txt; echo
 	cat block-list.txt | ./assn6
-	@make cleanup
+	#@make cleanup

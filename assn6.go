@@ -7,8 +7,6 @@ that all members of my group and the members of the group that
 submitted the copy will receive a zero on this assignment.
 */
 
-
-
 package main
 
 import (

@@ -16,51 +16,50 @@ import java.util.ArrayList;
 
 public class ssft
 {
-    
+
     private static ArrayList<Integer> array;
     private static int total = 0;
-    
-    
+
     public static void main(String[] args) throws FileNotFoundException, IOException{
         File file = null;
         if (0 < args.length)
         {
             file = new File(args[0]);
         }
-        
+
         FileReader fileReader = new FileReader(file);
         BufferedReader bufferReader = new BufferedReader(fileReader);
         array = new ArrayList<>();
         String line;
-        
+
         while((line = bufferReader.readLine()) !=null)
         {
-            
+
             int temp = Integer.parseInt(line);
             array.add(temp);
         }
-        
+
         int current = 0;
-        
+
         while(ssft.array.size() >= 2)
         {
             current = compare(current);
         }
         System.out.println("SSTF Total Seek: " + total);
     }
-    
+
     private static int compare(int current)
     {
-        
+
         int currentIndex = current;
-        
+
         int currentValue;
         int next = currentIndex + 1;
         if(currentIndex == array.size()-1)
         {
             next = 0;
         }
-        
+
         int count = 0;
         int newIndex = 1;
         int lowestTemp = -1;
@@ -77,9 +76,8 @@ public class ssft
                 {
                     lowestTemp = Math.abs(ssft.array.get(currentIndex) - ssft.array.get(next));
                     newIndex = next;
-                    
                 }
-                
+
             }
             if(next == ssft.array.size()-1)
             {
@@ -91,13 +89,13 @@ public class ssft
             }
             count++;
         }
-        
+
         total += lowestTemp;
-        System.out.println("newIndex = " + ssft.array.get(newIndex) + " removed = " + ssft.array.get(currentIndex) +
-                           " sum = " + total);
+        //System.out.println("newIndex = " + ssft.array.get(newIndex)
+        //  + " removed = " + ssft.array.get(currentIndex) + " sum = " + total);
         currentValue = ssft.array.get(newIndex);
         array.remove(currentIndex);
-        
+
         for(int i = 0; i < array.size(); i++)
         {
             if(ssft.array.get(i) == currentValue)
@@ -108,6 +106,4 @@ public class ssft
         }
         return currentIndex;
     }
-    
-    
 }
